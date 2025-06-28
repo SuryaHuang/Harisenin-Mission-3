@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill Homepage</title>
+    <link rel="stylesheet" href="beranda_style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <div class="logo-container">
+          <a href="">
+            <img class="logo" src="Logo/Logo.png" alt="Chill Logo"/>
+          </a>
+        </div>
+        <div class="menu-container">
+          <ul class="menu-list">
+            <li class="menu-list-item"><a href="" class="menu1">Series</a></li>
+            <li class="menu-list-item"><a href="" class="menu2">Film</a></li>
+            <li class="menu-list-item">
+              <a href="" class="menu3">Daftar Saya</a>
+            </li>
+          </ul>
+        </div>
+        <div class="profile-container">
+          <a href="#">
+            <img
+              class="profile_picture"
+              src="Logo/profPic.png"
+              alt="profile_picture"
+            />
+          </a>
+          <div class="profile-text-container">
+            <span class="profile-text">Profile</span>
+            <div class="dropdown">
+              <input type="checkbox" id="profile-toggle" hidden />
+              <label for="profile-toggle" class="dropdown-toggle">
+                <span class="drop-icon">
+                  <ion-icon name="chevron-down" class="drop-icon"></ion-icon>
+                </span>
+              </label>
+              <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">
+                  <ion-icon name="person-outline"></ion-icon>
+                  Profil Saya
+                </a>
+                <a href="#" class="dropdown-item">
+                  <ion-icon name="diamond-outline"></ion-icon>
+                  Ubah Premium
+                </a>
+                <a href="login.html" class="dropdown-item">
+                  <ion-icon name="log-out-outline"></ion-icon>
+                  Keluar
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="toggle">
+            <ion-icon name="moon" class="toggle-icon"></ion-icon
+            ><ion-icon name="sunny" class="toggle-icon"></ion-icon>
+            <div class="toggle-ball"></div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="content-container">
+        <div
+          class="featured-content"
+          style="
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #151515),
+              url('Landscape/feature-cover.png') no-repeat;
+            background-position: center;
+            object-fit: cover;
+            background-size: 100% 100%;
+          "
+          alt="feature-cover"
+        >
+          <img
+            class="featured-title"
+            src="Landscape/feature-title.png"
+            alt="featured-title"
+          />
+          <p class="featured-description">
+            David Martinez adalah seorang anak muda yang tinggal di daerah kumuh
+            Night City. Setelah mengalami tragedi yang membuatnya kehilangan
+            ibunya, ia memutuskan untuk menjadi seorang Edgerunner, seorang
+            bajingan jalanan yang bekerja untuk menyelesaikan pekerjaan
+            berbahaya demi mendapatkan uang.
+          </p>
+          <div class="button-group">
+            <button class="featured-button">Mulai</button>
+            <button class="featured-button-2">
+              <ion-icon name="information-circle-outline" class="info"></ion-icon
+              >Selengkapnya
+            </button>
+            <button class="klasifikasi">18+</button>
+            <button class="volume-button">
+              <ion-icon name="volume-mute" class="volume"></ion-icon></ion-icon>
+            </button>
+          </div>
+        </div>
+        <div class="movie-list-container">
+          <h3 class="movie-list-title">Melanjutkan Tonton Film</h3>
+          <div class="movie-list-wrapper">
+            <ion-icon name="caret-back" class="arrow1"></ion-icon>
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="Landscape/Type=1.png"
+                  alt="landscape-img-1"
+                />
+                <span class="movie-list-item-title">My Perfect Stranger</span>
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="Landscape/Type=3.png"
+                  alt="landscape-img-2"
+                />
+                <span class="movie-list-item-title">My Perfect Stranger</span>
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="Landscape/Type=6.png"
+                  alt="landscape-img-3"
+                />
+                <span class="movie-list-item-title">My Perfect Stranger</span>
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="Landscape/Type=7.png"
+                  alt="landscape-img-4"
+                />
+                <span class="movie-list-item-title">My Perfect Stranger</span>
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="Landscape/Type=4.png"
+                  alt="landscape-img-5"
+                />
+                <span class="movie-list-item-title">My Perfect Stranger</span>
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="Landscape/Type=5.png"
+                  alt="landscape-img-6"
+                />
+                <span class="movie-list-item-title">My Perfect Stranger</span>
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img"
+                  src="Landscape/Type=8.png"
+                  alt="landscape-img-7"
+                />
+                <span class="movie-list-item-title">My Perfect Stranger</span>
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+            </div>
+            <ion-icon name="caret-forward" class="arrow2"></ion-icon>
+          </div>
+        </div>
+
+        <div class="movie-list-container additional-container">
+          <h1 class="movie-list-title">Top Rating Film dan Series Hari Ini</h1>
+          <div class="movie-list-wrapper">
+            <ion-icon name="caret-back" class="arrow3"></ion-icon>
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=11.png"
+                  alt="potrait-img-1"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=9.png"
+                  alt="potrait-img-2"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=17.png"
+                  alt="potrait-img-3"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=16.png"
+                  alt="potrait-img-4"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=18.png"
+                  alt="potrait-img-5"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=15.png"
+                  alt="potrait-img-6"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=20.png"
+                  alt="potrait-img-7"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=22.png"
+                  alt="potrait-img-8"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=31.png"
+                  alt="potrait-img-9"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=30.png"
+                  alt="potrait-img-10"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+            </div>
+            <ion-icon name="caret-forward" class="arrow4"></ion-icon>
+          </div>
+        </div>
+
+        <div class="movie-list-container additional-container">
+          <h1 class="movie-list-title">Film Trending</h1>
+          <div class="movie-list-wrapper">
+            <ion-icon name="caret-back" class="arrow3"></ion-icon>
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=22.png"
+                  alt="potrait-img-1"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=23.png"
+                  alt="potrait-img-2"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=13.png"
+                  alt="potrait-img-3"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=3.png"
+                  alt="potrait-img-4"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=10.png"
+                  alt="potrait-img-5"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=29.png"
+                  alt="potrait-img-6"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=15.png"
+                  alt="potrait-img-7"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=25.png"
+                  alt="potrait-img-8"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=30.png"
+                  alt="potrait-img-9"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=6.png"
+                  alt="potrait-img-10"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+            </div>
+            <ion-icon name="caret-forward" class="arrow4"></ion-icon>
+          </div>
+        </div>
+
+        <div class="movie-list-container additional-container">
+          <h1 class="movie-list-title">Rilis Baru</h1>
+          <div class="movie-list-wrapper">
+            <ion-icon name="caret-back" class="arrow3"></ion-icon>
+            <div class="movie-list">
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=7.png"
+                  alt="potrait-img-1"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=12.png"
+                  alt="potrait-img-2"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=16.png"
+                  alt="potrait-img-3"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=21.png"
+                  alt="potrait-img-4"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=27.png"
+                  alt="potrait-img-5"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=28.png"
+                  alt="potrait-img-6"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=29.png"
+                  alt="potrait-img-7"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=31.png"
+                  alt="potrait-img-8"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=32.png"
+                  alt="potrait-img-9"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+              <div class="movie-list-item">
+                <img
+                  class="movie-list-item-img2"
+                  src="Potrait/Number=26.png"
+                  alt="potrait-img-10"
+                />
+                <span class="movie-list-item-title additional-list-item-title"
+                  >My Perfect Stranger</span
+                >
+                <p class="movie-list-item-description">
+                  Kisah seorang pembawa berita dan seorang penulis yang secara
+                  tak sengaja melakukan perjalanan ke masa lalu—tepatnya ke
+                  tahun 1987.
+                </p>
+                <span class="movie-list-item-button"
+                  ><ion-icon name="play" size="large"></ion-icon
+                ></span>
+              </div>
+            </div>
+            <ion-icon name="caret-forward" class="arrow4"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="footer-content">
+          <div class="logo-footer-container">
+            <img class="logo-footer" src="Logo/Logo2.png" alt="footer-logo" />
+            <p class="logo-footer-p">@2025 Chill All Rights Reserved.</p>
+          </div>
+
+          <div class="genre-container-1">
+            <div class="genre-1">
+              <h4>Genre</h4>
+              <ul class="genre-list-1">
+                <li><a href="">Aksi</a></li>
+                <li><a href="">Anak-anak</a></li>
+                <li><a href="">Anime</a></li>
+                <li><a href="">Britania</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="genre-container-2">
+            <div class="genre-2">
+              <ul class="genre-list-2">
+                <li><a href="">Drama</a></li>
+                <li><a href="">Fantasi Ilmiah & Fiksi</a></li>
+                <li><a href="">Kejahatan</a></li>
+                <li><a href="">K-Drama</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="genre-container-3">
+            <div class="genre-3">
+              <ul class="genre-list-3">
+                <li><a href="">Komedi</a></li>
+                <li><a href="">Petualangan</a></li>
+                <li><a href="">Perang</a></li>
+                <li><a href="">Romantis</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="genre-container-4">
+            <div class="genre-4">
+              <ul class="genre-list-4">
+                <li><a href="">Sains & Alam</a></li>
+                <li><a href="">Thriller</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="bantuan-container">
+            <div class="bantuan-list">
+              <h4>Bantuan</h4>
+              <ul class="bantuan">
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Kontak Kami</a></li>
+                <li><a href="">Privasi</a></li>
+                <li><a href="">Syarat & Ketentuan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

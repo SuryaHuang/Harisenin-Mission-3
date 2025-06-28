@@ -1,0 +1,233 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  animation: fadeIn 0.8s ease-in forwards;
+  opacity: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: url("./Background/bg2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center 50%;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  height: 580px;
+  background: linear-gradient(135deg, transparent, rgba(255, 255, 255, 0.096));
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(70px);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin: 0 0 100px 0;
+}
+
+.wrapper .form-box-register {
+  width: 100%;
+  padding: 40px;
+  position: relative;
+}
+
+.wrapper .form-box-register .logo {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.wrapper .form-box-register h2 {
+  margin-bottom: 5px;
+  text-align: center;
+  color: white;
+  font-weight: 900;
+  text-shadow: #ff6b6b 2px 2px 3px;
+  font-family: "lato", sans-serif;
+}
+
+.wrapper .form-box-register .welcome-message {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 1.5px solid #ff6b6b;
+  font-family: "lato", sans-serif;
+  margin: 30px 0;
+}
+
+.input-box input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: "lato", sans-serif;
+  padding: 15px 35px 0 5px;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: white;
+  font-size: 1em;
+  pointer-events: none;
+  transform: translateY(-10%);
+  transition: 0.5s;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+}
+
+/*be responsive*/
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -10px;
+  left: 5px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.7em;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: white;
+  line-height: 67px;
+}
+
+/*be responsive*/
+.wrapper .form-box-register .login-register p {
+  margin: -20px 0 35px;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+  font-size: 0.9em;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+
+.login-link {
+  transition: 0.5s ease;
+}
+
+.login-link:active {
+  transform: translate3d(4px, 4px, 0px);
+  transition: all 0.1s ease;
+  text-decoration: none;
+}
+
+.login-register p a {
+  text-decoration: none;
+  color: white;
+  font-family: "lato", sans-serif;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+  color: #e0bbff;
+  transition: 1s all ease;
+}
+
+.btn {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(135deg, #f06595, #ff6b6b);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s ease;
+  font-family: "lato", sans-serif;
+}
+
+.btn:hover,
+.btn2:hover {
+  color: #e0bbff;
+  transition: all 0.8s ease;
+}
+
+.btn:active,
+.btn2:active {
+  transform: translate3d(0, 3.5px, 1px);
+  box-shadow: 0 0.8px #f5f3f0a6;
+  transition: all 0.2s ease;
+}
+
+.atau {
+  text-align: center;
+  margin: 10px 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 0.8em;
+  font-family: "lato", sans-serif;
+  user-select: none;
+}
+
+.gIcon1 {
+  font-size: 0.9em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.btn2 {
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(135deg, #ff6b6b, #f06595);
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1.1em;
+  color: white;
+  font-weight: 600;
+  transition: 0.5s ease;
+  font-family: "lato", sans-serif;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-header h2,
+.register-header p {
+  user-select: none;
+}
+
+.logo:active {
+  transform: translateY(3px);
+  transition: all 0.2s ease;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
