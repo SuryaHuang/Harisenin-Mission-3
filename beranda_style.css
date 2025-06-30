@@ -82,6 +82,8 @@ body {
   margin: 0 20px;
   user-select: none;
   transition: all 0.7s ease;
+  width: 80px;
+  height: auto;
 }
 
 .profile-text-container:hover {
@@ -702,6 +704,11 @@ ion-icon.arrow3:active {
     transition: all 0.5s ease-in-out;
   }
 
+  .profile-text-container {
+    width: 80px;
+    height: auto;
+  }
+
   .logo-footer {
     width: 150px;
     height: auto;
@@ -837,12 +844,40 @@ ion-icon.arrow3:active {
 }
 
 @media screen and (max-width: 600px) {
-  .menu-list {
-    display: none;
+  .logo {
+    width: 20px;
+    height: auto;
+    margin-left: 5px;
   }
 
   .menu-list li {
     transition: all 0.5s ease-in-out;
+    font-size: 0.7em;
+  }
+
+  .menu-list {
+    margin-left: -20px;
+  }
+
+  .profile_picture {
+    width: 35px;
+    height: auto;
+    margin-left: -20px;
+  }
+
+  .profile-text-container {
+    width: 70px;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+
+  .drop-icon {
+    vertical-align: middle;
+  }
+
+  .profile-text {
+    font-size: 0.7em;
   }
 
   .featured-description {
