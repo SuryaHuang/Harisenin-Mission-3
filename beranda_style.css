@@ -88,6 +88,7 @@ body {
 
 .profile-text-container:hover {
   color: #f0659f;
+  transition: all 0.7s ease;
 }
 
 body a {
@@ -210,35 +211,6 @@ ion-icon.drop-icon:active {
   animation: fadeIn 0.8s ease-in forwards;
 }
 
-/* next project perlu javascript */
-/*
-.container.active {
-  background-color: #f5f3f0;
-}
-.movie-list-title.active {
-  color: #151515 !important;
-}
-.navbar.active {
-  background-color: #f0659f;
-}
-.menu-list-item a.active:hover {
-  color: #151515;
-  transition: all 0.7s ease;
-}
-.drop-icon.active {
-  color: #f5f3f0 !important;
-}
-.drop-icon.active:hover {
-  color: #151515 !important;
-}
-.toggle.active {
-  background-color: #151515;
-}
-.toggle-ball.active {
-  background-color: #f5f3f0;
-  transform: translateX(-20px);
-}*/
-
 .featured-content {
   height: 50vh;
   padding: 30px;
@@ -340,6 +312,7 @@ ion-icon.info {
   border: 1px solid #f5f3f083;
   user-select: none;
   margin-left: 5px;
+  font-size: 0.75em;
 }
 
 .volume-button {
@@ -381,20 +354,28 @@ ion-icon.volume {
 
 .movie-list-wrapper {
   position: relative;
+  overflow: hidden;
 }
 
 .movie-list {
   display: flex;
   align-items: center;
-  height: 300px;
+  height: 400px;
+  transform: translateX(0);
+  transition: all 0.8s ease-in-out;
+  will-change: transform;
 }
 
 .movie-list-title {
   margin-top: 0px;
-  margin-bottom: -32.5px;
+  margin-bottom: -85px;
   font-weight: 900;
   color: white;
   text-shadow: #f0659f 2px 2px 3px;
+}
+
+.title2 {
+  margin-bottom: -60px;
 }
 
 .movie-list-item {
@@ -433,7 +414,7 @@ ion-icon.volume {
   width: 270px;
   height: 180px;
   object-fit: cover;
-  border-radius: 5%;
+  border-radius: 20px;
 }
 
 .movie-list-item-img2 {
@@ -441,7 +422,7 @@ ion-icon.volume {
   width: 180px;
   height: 270px;
   object-fit: cover;
-  border-radius: 5%;
+  border-radius: 20px;
   margin-bottom: -90px;
 }
 
@@ -497,7 +478,7 @@ ion-icon.volume {
 ion-icon.arrow1 {
   font-size: 100px;
   position: absolute;
-  top: 105px;
+  top: 150px;
   left: 0;
   color: #f0659f;
   opacity: 0.5;
@@ -507,7 +488,7 @@ ion-icon.arrow1 {
 ion-icon.arrow2 {
   font-size: 100px;
   position: absolute;
-  top: 105px;
+  top: 150px;
   right: 0;
   color: #f0659f;
   opacity: 0.5;
@@ -517,7 +498,7 @@ ion-icon.arrow2 {
 ion-icon.arrow3 {
   font-size: 100px;
   position: absolute;
-  top: 140px;
+  top: 190px;
   left: 0;
   color: #f0659f;
   opacity: 0.5;
@@ -527,7 +508,7 @@ ion-icon.arrow3 {
 ion-icon.arrow4 {
   font-size: 100px;
   position: absolute;
-  top: 140px;
+  top: 190px;
   right: 0;
   color: #f0659f;
   opacity: 0.5;
@@ -677,6 +658,59 @@ ion-icon.arrow3:active {
 .bantuan li {
   padding-bottom: 8px;
   font-weight: 300;
+}
+
+/* white-mode-theme */
+.container.active {
+  background-color: #f5f3f0;
+}
+.movie-list-title.active {
+  color: #151515;
+}
+.navbar.active {
+  background-color: #f0659f;
+  border-bottom: 0.5px solid rgba(32, 14, 21, 0.1);
+}
+.menu-list-item.active a:hover {
+  color: #151515;
+  transition: all 0.7s ease;
+}
+.profile-text-container.active:hover {
+  color: #151515;
+  transition: all 0.7s ease;
+}
+.profile-text.active:hover {
+  color: #151515;
+  transition: all 0.7s ease;
+}
+.drop-icon.active {
+  color: #f5f3f0;
+}
+.drop-icon.active:hover {
+  color: #151515;
+}
+.movie-list-item-title.active {
+  color: #151515;
+  font-weight: 900;
+}
+.movie-list-item-description.active {
+  color: #151515;
+  text-shadow: white 1.5px 1.5px 2px;
+  font-weight: 900;
+}
+.footer-content.active {
+  height: 300px;
+  border-top: 0.5px solid rgba(32, 14, 21, 0.1);
+}
+.footer.active {
+  background-color: #f0659f;
+}
+.toggle.active {
+  background-color: #151515;
+}
+.toggle-ball.active {
+  background-color: #f5f3f0;
+  transform: translateX(-20px);
 }
 
 @keyframes fadeIn {
@@ -882,7 +916,7 @@ ion-icon.arrow3:active {
 
   .featured-description {
     font-size: 0.7em;
-    width: 375px;
+    width: 345px;
     height: auto;
     transition: all 0.5s ease-in-out;
     text-align: left;
@@ -900,6 +934,11 @@ ion-icon.arrow3:active {
   .additional-container h1 {
     font-size: 1.4em;
     transition: all 0.5s ease-in-out;
+  }
+
+  .movie-list-item-description {
+    width: 160px;
+    height: auto;
   }
 
   .logo-footer {
